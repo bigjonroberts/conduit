@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Gjallarhorn">
+      <HintPath>..\..\..\Gjallarhorn.Bindable\bin\netstandard2.0\Gjallarhorn.dll</HintPath>
+    </Reference>
+    <Reference Include="Gjallarhorn.Bindable">
+      <HintPath>..\..\..\Gjallarhorn.Bindable\bin\netstandard2.0\Gjallarhorn.Bindable.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
