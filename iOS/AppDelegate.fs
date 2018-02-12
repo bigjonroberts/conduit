@@ -17,11 +17,11 @@ type AppDelegate () =
 
         Forms.Init()
         let info = 
-            let page = new MainPage()
-            Framework.createApplicationInfo Conduit.Program.applicationCore page
-        let app = info.CreateApp()
+            new MainNavigationPage()
+            |> Framework.createApplicationInfo Conduit.Program.applicationCore
+        let xformsApp = info.CreateApp()
         
-        this.LoadApplication (app)
+        this.LoadApplication (xformsApp)
         base.FinishedLaunching(app, options)
 
 module Main =

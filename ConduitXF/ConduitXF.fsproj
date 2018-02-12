@@ -4,21 +4,18 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="MainPage.xaml" />
-    <Compile Include="View.fs" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="2.5.0.122203" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Conduit\Conduit.fsproj" />
-  </ItemGroup>
-  <ItemGroup>
     <Reference Include="Gjallarhorn.Bindable">
       <HintPath>..\..\..\Gjallarhorn.Bindable\bin\netstandard2.0\Gjallarhorn.Bindable.dll</HintPath>
     </Reference>
     <Reference Include="Gjallarhorn">
       <HintPath>..\..\..\Gjallarhorn.Bindable\bin\netstandard2.0\Gjallarhorn.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="View.fs" />
+    <None Include="MainPage.xaml" />
+    <None Include="MainNavigationPage.xaml" />
+    <PackageReference Include="Xamarin.Forms" Version="2.5.0.122203" />
+    <ProjectReference Include="..\Conduit\Conduit.fsproj" />
   </ItemGroup>
 </Project>
